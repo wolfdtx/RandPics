@@ -8,7 +8,7 @@ RandPics::RandPics(){} //constructor
 
 void RandPics::drawWatchFace(){
     display.fillScreen(GxEPD_BLACK);
-    srand(currentTime.Minute); //seeds rand() with the current minute causing watchy to display a new random image once per minute
+    srand(currentTime.Minute * currentTime.Hour * currentTime.Wday); //seeds rand() with the current minute causing watchy to display a new random image once per minute
     //change the % after rand() to the size of *art_sheet []
     display.drawBitmap(0, 0, art_sheet[(rand() % 41)], DISPLAY_WIDTH, DISPLAY_HEIGHT, GxEPD_WHITE); //draws a random image from *art_sheet [] full size
 }
