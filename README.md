@@ -15,6 +15,6 @@ Rand_Pics.cpp
 Rand_Pics.h
 RandPics.ino
 
-Users can replace the text of artsheet.h and lightly modify the code of Rand_Pics.cpp to display their own images. I will add other themed artsheets in a separate folder /ThemedArtsheets
+Users can replace the text of artsheet.h and lightly modify the code of Rand_Pics.cpp to display their own images. I will add other themed artsheets in separate folders. Each RP-XXXX is a premade folder for that style art.
 
-The current ArtSheet has 41 images and takes 89% program memory. I estimate 70-80 possible images at 200x200 could be stored per artsheet.
+The default ArtSheet for RandPics has 41 ratfink style images and takes 89% program memory. I estimate 70-80 possible images at 200x200 could be stored per artsheet.
